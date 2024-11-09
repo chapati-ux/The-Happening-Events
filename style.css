@@ -177,84 +177,103 @@ iframe{
 #buttons button:nth-child(2):hover{
     color: rgb(177, 156, 201) ;
 }
+
+
 #section2 {
-    text-align: center;
-    padding: 20px;
-    background-color:black;
-    height: auto;
-    padding-bottom: 40px;
+  padding: 20px;
+  background-color: #1f1b2d;
+  height:100%;
+  display: flex;
+  width: 100%;
+  padding-bottom: 40px;
+}
+#header{
+height: 100%;
+}
+.header h2 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  padding-left: 30px;
+  color: white;
+}
+
+.header p{
+
+  font-size: 1rem;
+  padding-right: 75%;
+  color: #B8B8B8;
+}
+
+.container1{
+
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: -3%;
+  gap: 20px;
+  margin: 2%;
+  
+ 
+}
+.container2{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: right;
+  gap: 20px;
+  /* padding-left: 30%; */
+  margin: 2%;
+}
+.item {
+  background-color: #2A2438;
+  border-radius: 10px;
+  padding: 20px;
+  height: 50%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  text-align: center;
+}
+
+.item:hover {
+  transform: scale(1.05);
+}
+
+.icon {
+  background-color: #a36cf1;
+  display: flex;
+  padding: 15px;
+  justify-content: center;
+  border-radius: 50%;
+  margin: 10px 0;
+  font-size: 2rem;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #FFF;
+}
+
+.item p {
+  font-size: 0.9rem;
+  color: #B8B8B8;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .header h2 {
+    font-size: 2rem;
+  }
+
+  .item {
     width: 100%;
   }
-  
-  .header h2 {
-    font-size: 2.5rem;
-    margin-bottom: 10px;
-    color: white;
-  }
-  
-  .header p {
-    font-size: 1rem;
-    color: #B8B8B8;
-    margin-bottom: 30px;
-  }
-  
-  .container{
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  .item {
-    background-color: #2A2438;
-    border-radius: 10px;
-    padding: 20px;
-    width: 22%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-    text-align: center;
-  }
-  
-  .item:hover {
-    transform: scale(1.05);
-  }
-  
-  .icon {
-    background-color: #a36cf1;
-    display: flex;
-    padding: 15px;
-    justify-content: center;
-    border-radius: 50%;
-    margin: 10px 0;
-    font-size: 2rem;
-    color: white;
-    margin-bottom: 10px;
-  }
-  
-  .item h3 {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-    color: #FFF;
-  }
-  
-  .item p {
-    font-size: 0.9rem;
-    color: #B8B8B8;
-  }
-  
-  /* Media queries for responsiveness */
-  @media (max-width: 768px) {
-    .header h2 {
-      font-size: 2rem;
-    }
-  
-    .item {
-      width: 100%;
-    }
-  }
-  
+}
+
   .about{
     background-color:black;
     padding: 50px;
@@ -511,5 +530,81 @@ height: 650px;
 
 .image, img:hover{
     margin-bottom: 50px;
+}
+
+#section3{
+  background-color: #16061c;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  height: 100%;
+  width: 100;
+  margin: 0;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.header h2{
+  font-size: 3em;
+}
+
+.viewmore-button{
+  background-color: #a762e8;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.projects{
+  margin-top: 20px;
+}
+
+.project-row{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  gap: 20px;
+  transition: background-color 0.3s ease;
+}
+
+.project-row:hover{
+  background-color: #3a2549;
+  border: 1px solid  #a762e8;
+  padding: 5px;
+}
+
+.project-name, .project-type, .learn-more{
+  margin-bottom: 50px;
+  color: #ffffff;
+}
+.project-name {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.project-type {
+  font-size: 20px;
+  font-weight: bold;
+  align-items: center;
+}
+
+.learn-more {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
 }
 
