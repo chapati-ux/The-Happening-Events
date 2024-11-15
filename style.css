@@ -764,3 +764,80 @@ height: 650px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+.potential{
+  background-color: black;
+  margin: 0;
+  font-family: 'Barlow', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.potential-content{
+  text-align: center;
+  color: white;
+  padding: 130px;
+  background:linear-gradient(135deg, #2C0630, #4E1A5C, #B85A2A);
+  width: 95%;
+  height: 75%;
+  border-radius: 25px;
+}
+
+.potential-content h2{
+  font-size: 55px;
+  margin-bottom: 15px;
+}
+
+.potential-content p{
+  font-size:20px;
+  margin: 10px 0 30px;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+
+.get-started-button{
+  padding: 20px 40px;
+  font-size: 20px;
+  color: white;
+  background-color: #7e3fd1;
+  border-radius: 50px;
+  text-decoration: none;
+  transition: background-color 1s,
+  1s;
+  cursor: pointer;
+  border: none;
+}
+
+.get-started-button:hover{
+  background-color: #854ee1;
+}
+
+
+.portfolio-button{
+  padding: 12px 30px;
+  font-size: 1rem;
+  color: white;
+  background-color: transparent;
+  border: none;
+}
+
+.portfolio-button:hover{
+  color: #a762e8;
+}
+
+/* responsive */
+@media (max-width:600px){
+  .potential-content h2{
+    font-size: 2rem;
+  }
+  .button-container {
+    flex-direction: column;
+}
+  
+}
