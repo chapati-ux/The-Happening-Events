@@ -1,0 +1,53 @@
+body{
+  background-color:  #9D5EC5;
+  overflow-x: hidden;
+}
+.theysaid{
+    text-align: justify;
+   
+}
+ h9{
+  margin-left: 3%;
+  padding-left: 30%;
+  font-size: 45px;
+color: white;
+}
+.cards{
+ display: flex;
+ flex-wrap: nowrap;
+ padding-left: 7%;
+ padding-top: 5%;
+ gap: 6%;
+}
+.card1{
+  border: solid 1px;
+  border-radius: 10px;
+ width: 25%;
+ text-align: center;
+  padding-left: 5px;
+  border-color: white;
+  font-size: medium;
+  padding-top: 5%;
+
+}
+p12{
+ text-align: center;
+    color: whitesmoke;
+  font-size: large;
+   }
+p13{
+  color: #8c46ee;
+  text-align: center;
+font-size: medium;
+}
+p14{
+  color: whitesmoke;
+  font-size: large;
+}
+  
+.card1:hover,.card1:focus,.card1:active{
+  -webkit-transform: scale(2.1);
+  transform: scale(1.1);
+  
+  background-color:black
+}
