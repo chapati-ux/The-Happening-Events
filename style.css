@@ -83,7 +83,45 @@ html , body{
     margin-right: 1vw;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
+.dropdown .pages {
+  cursor: pointer;
+}
+
+.dropdown .submenu {
+  display: none; 
+  position: absolute;
+  top: 100%; 
+  left: 0;
+  background-color: rgba(28, 0, 48, 0.95); 
+  padding: 10px 0;
+  border-radius: 5px;
+  min-width: 300px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  z-index: 1000; 
+}
+
+.dropdown .submenu a {
+  display: block;
+  padding: 10px 20px;
+  color: #bfbfbf;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.dropdown .submenu a:hover {
+  color: #ffffff;
+  background-color: #3b0069; 
+}
+
+.dropdown:hover .submenu {
+  display: block;
+}
 
 #section1{
     height: 100vh;
